@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
+import "dotenv"
 
 function connectDB(){
 
-    mongoose.connect('mongodb+srv://sathya:sathyapr@cluster0.dkuc0.mongodb.net/sheycars-udemy' , {useUnifiedTopology: true , useNewUrlParser: true})
+    mongoose.connect(process.env.DB_URL , {useUnifiedTopology: true , useNewUrlParser: true})
 
     const connection = mongoose.connection
 

@@ -25,6 +25,7 @@ function Register() {
             className="w-100"
             data-aos="slide-left"
             data-aos-duration="1500"
+            alt="logo"
             src="https://images.unsplash.com/photo-1485291571150-772bcfc10da5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"
           />
           <h1 className="login-logo">Book-A-Car</h1>
@@ -47,12 +48,14 @@ function Register() {
             <Form.Item
               name="password"
               label="Password"
+              type="password"
               rules={[{ required: true }]}
             >
               <Input />
             </Form.Item>
             <Form.Item
               name="cpassword"
+              type="password"
               label="Confirm Password"
               rules={[{ required: true }]}
             >
